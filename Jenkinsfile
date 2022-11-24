@@ -6,11 +6,6 @@ pipeline {
                 git url: 'https://github.com/zamunda1983/jenktest.git'
             }
         }
-        stage ("Docker clear") {
-            steps {
-            sh "docker rm flask-app"
-            }
-        }
         stage ("Docker build") {
             steps {
             sh "docker build -t flask-app ."
