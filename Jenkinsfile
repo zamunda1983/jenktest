@@ -13,7 +13,7 @@ pipeline {
         }
         stage ("Docker execute") {
             steps {
-            sh "docker run -it --entrypoint /bin/bash sidiq/flask-app"
+            sh "docker stop sidiq/flask-app && sudo docker start sidiq/flask-app"
             }
         }
     }
