@@ -12,12 +12,7 @@ pipeline {
             }
         }
         stage ("Docker execute") {
-                steps {
-                    dir('/var/jenkins_home/workspace/jenktest') {
-                        sh "docker run --rm -p 8081:8081 --name flask-app flask-app"
-                    }
+                sh "docker run --rm -p 8081:8081 --name flask-app flask-app"
                 }
-            }
         }
     }
-}
