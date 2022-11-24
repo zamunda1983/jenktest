@@ -13,7 +13,7 @@ def symbol():
 
 @app.route('/myth.html')
 def myth():
-    return render_template('myth.html', the_title='Tiger in Myth and Legend. I am legenda')
+    return render_template('myth.html', the_title='Tigger in Myth and Legend. I am legenda')
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8081)
