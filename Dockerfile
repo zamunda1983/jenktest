@@ -1,3 +1,3 @@
 FROM python:3-alpine
-WORKDIR /var/jenkins_home/workspace/jenktest/
+WORKDIR ~
 CMD ["python3", "-u", "routes.py"]
