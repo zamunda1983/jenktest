@@ -13,6 +13,7 @@ pipeline {
         }
         stage ("Docker execute") {
             steps {
+            sh "docker rm flask-app"
             sh "docker run -p 8081:8081 --name flask-app flask-app"
             }
         }
