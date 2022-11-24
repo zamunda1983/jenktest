@@ -13,7 +13,7 @@ pipeline {
         }
         stage ("Docker execute") {
             steps {
-            sh "docker stop . && sudo docker start ."
+            sh "sudo docker start ."
             }
         }
     }
