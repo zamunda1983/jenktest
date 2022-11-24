@@ -8,12 +8,12 @@ pipeline {
         }
         stage ("Docker build") {
             steps {
-            sh "docker build -t sidiq/flask-app ."
+            sh "docker build -t flask-app ."
             }
         }
         stage ("Docker execute") {
             steps {
-            sh "docker start ."
+            sh "docker run -p 8081:8081 --name flask-app flask-app"
             }
         }
     }
