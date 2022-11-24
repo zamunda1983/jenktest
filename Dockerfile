@@ -1,2 +1,2 @@
 FROM python:3-alpine
-CMD python3 route.py
+CMD python3 routes.py
