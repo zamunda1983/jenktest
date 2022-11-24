@@ -1,3 +1,3 @@
 FROM python:3-alpine
-WORKDIR ~
+WORKDIR .
 CMD ["python3", "-u", "routes.py"]
