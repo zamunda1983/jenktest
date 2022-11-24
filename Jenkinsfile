@@ -11,5 +11,10 @@ pipeline {
             sh "docker build -t sidiq/flask-app ."
             }
         }
+        stage ("Docker execute") {
+            steps {
+            sh "docker run -it --entrypoint /bin/bash sidiq/flask-app"
+            }
+        }
     }
 }
