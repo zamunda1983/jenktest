@@ -1,4 +1,4 @@
 FROM python:3-alpine
-WORKDIR .
-CMD pwd
-#CMD ["python3", "-u", "routes.py"]
+WORKDIR apps
+COPY routes.py /apps 
+CMD ["python3", "-u", "routes.py"]
