@@ -1,5 +1,5 @@
 FROM nginx:alpine
-EXPOSE 8081
+EXPOSE 8082
 #FROM python:3-alpine
 #WORKDIR apps
 #COPY . /apps
